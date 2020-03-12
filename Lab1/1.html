@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>1 Exercise </title>
+</head>
+
+<body>
+    <header>
+        <h1>My page!</h1>
+    </header>
+    <!-- page content -->
+    <main>
+        <article>
+            <h1>Main news</h1>
+            <article>
+                <h2>15 May 2019</h2>
+                <p>Today is the international day of may 15th</p>
+            </article>
+            <article>
+                <h2>28 May 2019</h2>
+                <p>It's almost end of the month. Let's go to the beach!</p>
+            </article>
+            <article>
+                <h2>02 June 2019</h2>
+                <p>President of Japan cancelled anime.</p>
+                <aside>
+                    <p>Korean film 'Parasite' takes best picture Oscar; acting honors go to Phoenix, Zellweger, Pitt,
+                        Dern.
+                    </p>
+                </aside>
+            </article>
+        </article>
+
+        <audio controls src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+
+        <p dir="ltr">Very usefull <bdi>اَلعَرَبِيَّةُ ٱلْفُصْحَىٰ</bdi> for right-to-left languages.</p>
+
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "30px Arial";
+            ctx.strokeText("DRAWABLE", 10, 40);
+            ctx.strokeText("TEXT", 110, 80);
+
+        </script>
+
+        <p>Choose your destiny:</p>
+        <p><input list="country">
+            <datalist id="country">
+                <option value="Sweden"></option>
+                <option value="Wakanda"></option>
+                <option value="Uganda"></option>
+                <option value="USA"></option>
+
+            </datalist></p>
+
+        <details>
+            <summary>Billing details</summary>
+            White House, USA <br>
+            Trump, Dolan
+        </details>
+        <!-- Простой попап диалог с формой -->
+        <dialog id="favDialog">
+            HI
+        </dialog>
+        <menu>
+            <button id="updateDetails">Open dialog</button>
+        </menu>
+        <script>
+            (function () {
+                var updateButton = document.getElementById('updateDetails');
+                updateButton.addEventListener('click', function () {
+                    favDialog.showModal();
+                });
+            })();
+        </script>
+        <embed type="video/webm" src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4"
+            width="250" height="200">
+        <style>
+            figure {
+                display: flex;
+                flex-flow: column;
+                max-width: 220px;
+            }
+
+            img {
+                max-width: 220px;
+                max-height: 150px;
+            }
+
+            figcaption {
+                background-color: rgb(255, 253, 111);
+                font: italic smaller sans-serif;
+                padding: 3px;
+                text-align: center;
+            }
+        </style>
+        <figure>
+            <img src="https://i9.vgoroden.ru/95m6bys0nknns_1ply0di.jpeg" alt="Elephant at sunset">
+            <figcaption>Some noice chonky bananas</figcaption>
+        </figure>
+        <p>I can't take <mark>math analysis</mark> seriously.</p>
+        <div style="background:rgb(255, 255, 255);border:1px solid #cccccc;padding: 10px;" contextmenu="mymenu">
+            <p>Menu area!</p>
+            <menu type="context" id="mymenu">
+                <menuitem label="Reload page" onclick="window.location.reload();">
+                </menuitem>
+            </menu>
+        </div>
+        <label for="magic">Magic left:</label>
+        <meter id="magic" min="0" max="100" low="33" high="66" optimum="80" value="69">
+        </meter>
+        <nav><a href="1.html">First link</a> | <a href="2.html">Second link</a> |
+            <a href="3.html">3rd link</a> | <a href="4.html">last link))</a></nav>
+        <h3>Name the cat!</h3>
+        <form oninput="x.value=a.value+' Cat'">
+            <input type="text" id="a" value="Kitty">
+            =<output name="x" for="a"></output>
+        </form>
+        <picture>
+            <source media="(min-width: 650px)"
+                srcset="https://cdn11.bigcommerce.com/s-in5je/images/stencil/500x659/products/6729/21035/banana-sticker__91685.1564864025.jpg?c=2&imbypass=on">
+            <source media="(min-width: 465px)"
+                srcset="https://www.fructo.com.ua/image/cache/catalog/fruct/baby-banana-1400x1400.png">
+            <img src="https://24tv.ua/resources/photos/news/1200x675_DIR/201808/1019452.jpg?201902114710" alt="Bananas"
+                style="width:auto;">
+        </picture>
+        <p>Hacking your PC progress:</p>
+        <progress id="file" max="100" value="60"> 60% </progress>
+        <section>
+            <h1>Very important info</h1>
+            <p>You're awesome!</p>
+        </section>
+        <audio controls>
+            <source src="https://www.w3schools.com/tags/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+        </audio>
+        <template>
+            <h2>Hidden</h2>
+            <img src="some_image.jpg">
+        </template>
+        <p>I'm leaving <time>9:30</time> tomorrow.</p>
+        <video controls width="250" src="./friday.mp4">
+            <track default kind="captions" srclang="en" src="./friday.vtt" />
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+        <p class="word">
+            метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+    </main>
+    <footer>
+        <p>Cat rights saved 2020</p>
+    </footer>
+    <!-- page content -->
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.gallery__img1 {
+    position: absolute;
+    top: 20px;
+    left: 320px;
+    width: 226px;
+    height: 175px;
+    object-fit: cover;
+
+}
+
+.gallery__img2 {
+    position: absolute;
+    top: 20px;
+    left: 560px;
+    width: 226px;
+    height: 175px;
+    object-fit: cover;
+
+}
+
+.gallery__img3 {
+    position: absolute;
+    top: 20px;
+    left: 800px;
+    width: 467px;
+    height: 460px;
+    object-fit: cover;
+
+}
+
+.gallery__img4 {
+    position: absolute;
+    top: 210px;
+    left: 320px;
+    width: 467px;
+    height: 270px;
+    object-fit: cover;
+
+}
+.gallery__img5 {
+    position: absolute;
+    top: 495px;
+    left: 320px;
+    width: 467px;
+    height: 270px;
+    object-fit: cover;
+
+}
+.gallery__img6 {
+    position: absolute;
+    top: 495px;
+    left: 800px;
+    width: 467px;
+    height: 270px;
+    object-fit: cover;
+
+}
