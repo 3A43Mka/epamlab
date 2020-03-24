@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=task2.css.map */
+.diagram-block {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 500px;
+  height: 250px;
+  background: #f8f8f8;
+}
+
+.diagram-heading {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 500px;
+}
+
+.table-block {
+  margin: 0 auto;
+  width: 500px;
+}
+/*# sourceMappingURL=task2.css.map */
