@@ -59,7 +59,6 @@ function DrawDiagrams() {
     let currHeight = 0;
     for (let i = 0; i < data.length; i++) {
         currHeight = data[i].num * coef;
-        // (currHeight == 0) ? currHeight = 1 * coef: null;
         (currHeight < 25) ? (currHeight = 25) : null;
 
         let column = document.createElement("div");
