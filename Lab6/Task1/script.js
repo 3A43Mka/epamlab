@@ -1,9 +1,6 @@
 $(document).ready(function() {
     let spinner = $(".spinner");
     let invalid = false;
-
-
-
     $("#form").on("submit", (e) => {
         e.preventDefault();
         invalid = false;
@@ -29,21 +26,18 @@ $(document).ready(function() {
                     if ($(item).parent().find("p").length)
                         $(item).parent().find(".error").remove();
                 }
-
-
             }
             dataToSend[$(item).data("name")] = $(item).val();
         });
-        // console.log(dataToSend);
         if (!invalid)
             $.ajax({
                 url: "https://anyurl.con",
                 type: "POST",
                 beforeSend: () => {
-                    spinner.show(); //спінер доданий виключно для демонстрації. при коротких колах за даними його не треба вставляти.
+                    spinner.show();
                 },
                 complete: () => {
-                    spinner.hide(); //спінер доданий виключно для демонстрації. при коротких колах за даними його не треба вставляти.
+                    spinner.hide();
                 },
                 contentType: "application/json",
                 data: JSON.stringify(dataToSend),
