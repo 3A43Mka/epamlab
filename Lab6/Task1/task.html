@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src=""></script>
+    <title>Task1</title>
+</head>
+
+<body>
+    <div class="spinner">
+        <div class="spinner-inner">
+            <div class="spinner-inner__line"></div>
+        </div>
+    </div>
+    <form id="form" type="POST" autocomplete="off">
+        <div class="block">
+            <span>email</span>
+            <input name="email" type="text" data-name="email" />
+        </div>
+        <div class="block">
+            <span>name</span>
+            <input name="name" type="text" data-name="name" />
+        </div>
+        <div class="block">
+            Message
+            <textarea name="message" data-name="message"></textarea>
+        </div>
+        <div class="block">
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

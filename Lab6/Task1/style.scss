@@ -1,0 +1,48 @@
+.block {
+    margin-bottom: 30px;
+}
+
+span {
+    margin-right: 20px;
+}
+
+.spinner {
+    display: none;
+    /*спробуйте видалити цей рядок - побачите css-спінер*/
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.spinner-inner {
+    border-radius: 100%;
+    position: fixed;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-inner__line {
+    animation: 0.7s linear spinner infinite;
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 100px;
+    left: 50%;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
