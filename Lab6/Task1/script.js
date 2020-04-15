@@ -14,9 +14,7 @@ $(document).ready(function() {
                 }
                 invalid = true;
             } else {
-                console.log("Email validation:" + validateEmail($(item).val()));
                 if ($(item).parent().find("span").text() == "email" && !(validateEmail($(item).val()))) {
-                    console.log("YESSSS");
                     if (!$(item).parent().find("p").length) {
                         let error = $("<p></p>").addClass("error").text("Wrong input");
                         $(item).parent().append(error);

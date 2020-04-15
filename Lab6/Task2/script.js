@@ -11,8 +11,7 @@ $(document).ready(function() {
         complete: () => {
             spinner.hide();
         },
-        success: function(data, status, xhr) { // success callback function
-            // console.log(data.data);
+        success: function(data, status, xhr) {
 
             employees = data.data;
             console.log(employees);
@@ -22,7 +21,7 @@ $(document).ready(function() {
 
         },
         error: () => {
-            alert(0);
+            alert("error.text");
         }
     });
 });
