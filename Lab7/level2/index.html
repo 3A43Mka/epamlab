@@ -49,7 +49,6 @@
                     ap = /'/g,
                     ic = /"/g;
                 message = message.toString().replace(lt, "&lt;").replace(gt, "&gt;").replace(ap, "&#39;").replace(ic, "&#34;");
-                console.log(message);
                 DB.save(message, function() {
                     displayPosts()
                 });

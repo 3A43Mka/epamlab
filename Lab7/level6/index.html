@@ -27,9 +27,9 @@
 
             // This will totally prevent us from loading evil URLs!
             url = url.toLowerCase();
-            if (url.match(/^https?:\/\//) || url.includes('//')) {
+            if (url.match(/^https?:\/\//) || url.includes('//') || url.includes('data:') || url.includes('javascript:')) {
                 setInnerText(document.getElementById("log"),
-                    "Sorry, cannot load a URL containing \"http\".");
+                    "Sorry, cannot load a URL containing \"http\" or \"data\".");
                 return;
             }
 
