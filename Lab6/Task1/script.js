@@ -9,14 +9,14 @@ $(document).ready(function() {
         inputs.each((key, item) => {
             if (!$(item).val()) {
                 if (!$(item).parent().find("p").length) {
-                    let error = $("<p></p>").addClass("error").text("Wrong input");
+                    let error = $("<p></p>").addClass("error").text("Invalid input");
                     $(item).parent().append(error);
                 }
                 invalid = true;
             } else {
                 if ($(item).parent().find("span").text() == "email" && !(validateEmail($(item).val()))) {
                     if (!$(item).parent().find("p").length) {
-                        let error = $("<p></p>").addClass("error").text("Wrong input");
+                        let error = $("<p></p>").addClass("error").text("Invalid input");
                         $(item).parent().append(error);
                     }
                     invalid = true;
