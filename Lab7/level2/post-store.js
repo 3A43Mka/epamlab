@@ -20,7 +20,6 @@ function PostDB(defaultMessage) {
 
     this.save = function(message, callback) {
         var newPost = new Post(message);
-        // console.log(message);
         var allPosts = this.getPosts();
         allPosts.push(newPost);
         window.localStorage["postDB"] = JSON.stringify({

@@ -20,7 +20,7 @@ class MainPage(webapp.RequestHandler):
     else:
       # Show the results page
       timer= self.request.get('timer', 0)
-      self.response.out.write(render('timer.html', { 'timer' : timer.replace('<', '').replace('>', '').replace("'", '').replace('"', '') }))
+      self.response.out.write(render('timer.html', { 'timer' : timer.replace('<', '&lt;').replace('>', '&gt;').replace("'", '&#39;').replace('"', '&#34;') }))
      
     return
  
